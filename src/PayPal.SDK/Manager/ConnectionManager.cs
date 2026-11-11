@@ -48,7 +48,7 @@ namespace PayPal.Api
             {
                 httpRequest = (HttpWebRequest) WebRequest.Create(url);
             }
-            catch (UriFormatException ex)
+            catch (UriFormatException)
             {
                 throw new ConfigException("Invalid URI: " + url);
             }
